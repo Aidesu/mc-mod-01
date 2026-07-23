@@ -1,0 +1,20 @@
+{
+    "itemGroup.mod01": "DataCraft",
+    "block.mod01.example_block": "Example Block",
+    "item.mod01.example_item": "FeurCoubeh",
+    "item.mod01.pudame": "Pudame",
+    "item.mod01.pudame_block": "Pudame block",
+    "item.mod01.tungsten_apple": "Tungsten apple",
+    "item.mod01.raw_bastnasite": "Raw Bastnasite",
+    "item.mod01.raw_bauxite": "Raw Bauxite",
+    "block.mod01.bastnasite_ore": "Bastnasite Ore",
+    "block.mod01.bauxite_ore": "Bauxite Ore",
+
+    "mod01.configuration.title": "mod-01 Configs",
+    "mod01.configuration.section.mod01.common.toml": "mod-01 Configs",
+    "mod01.configuration.section.mod01.common.toml.title": "mod-01 Configs",
+    "mod01.configuration.items": "Item List",
+    "mod01.configuration.logDirtBlock": "Log Dirt Block",
+    "mod01.configuration.magicNumberIntroduction": "Magic Number Text",
+    "mod01.configuration.magicNumber": "Magic Number"
+}
