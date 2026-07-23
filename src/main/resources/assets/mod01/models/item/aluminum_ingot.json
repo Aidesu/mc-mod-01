@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "mod01:item/tungsten_apple"
+    "layer0": "mod01:item/aluminum_ingot"
   }
 }

@@ -7,8 +7,11 @@
     "item.mod01.tungsten_apple": "Tungsten apple",
     "item.mod01.raw_bastnasite": "Raw Bastnasite",
     "item.mod01.raw_bauxite": "Raw Bauxite",
+    "item.mod01.aluminum_ingot": "Aluminum Ingot",
     "block.mod01.bastnasite_ore": "Bastnasite Ore",
     "block.mod01.bauxite_ore": "Bauxite Ore",
+    "block.mod01.aluminum_block": "Aluminum Block",
+
 
     "mod01.configuration.title": "mod-01 Configs",
     "mod01.configuration.section.mod01.common.toml": "mod-01 Configs",

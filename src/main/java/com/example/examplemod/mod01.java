@@ -50,9 +50,9 @@ public class mod01 {
     // Creates a new BlockItem with the id "mod01:example_block", combining the namespace and path
     public static final DeferredItem<BlockItem> EXAMPLE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("example_block", EXAMPLE_BLOCK);
 
-    // Creates a new food item with the id "mod01:example_id", nutrition 1 and saturation 2
-    public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder()
-            .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
+//    // Creates a new food item with the id "mod01:example_id", nutrition 1 and saturation 2
+//    public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder()
+//            .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
 
 
     // ############################ BASTNASITE ############################
@@ -83,6 +83,20 @@ public class mod01 {
     public static final DeferredItem<BlockItem> BAUXITE_ORE_ITEM =
             ITEMS.registerSimpleBlockItem("bauxite_ore", BAUXITE_ORE);
 
+    // ############################ ALUMINUM ############################
+    public static final DeferredItem<Item> ALUMINUM_INGOT =
+            ITEMS.registerSimpleItem("aluminum_ingot", new Item.Properties());
+
+    public static final DeferredBlock<Block> ALUMINUM_BLOCK =
+            BLOCKS.registerSimpleBlock("aluminum_block", BlockBehaviour.Properties.of()
+                    .strength(3.0f, 3.0f)
+                    .requiresCorrectToolForDrops()
+                    .mapColor(MapColor.COLOR_YELLOW)
+            );
+
+    public static final DeferredItem<BlockItem> ALUMINUM_INGOT_ITEM =
+            ITEMS.registerSimpleBlockItem("aluminum_block", ALUMINUM_BLOCK);
+
     // ############################ TEST APPLE ############################
     public static final DeferredItem<Item> TUNGSTEN_APPLE =
             ITEMS.registerSimpleItem(
@@ -101,12 +115,13 @@ public class mod01 {
                     .withTabsBefore(CreativeModeTabs.COMBAT)
                     .icon(() -> TUNGSTEN_APPLE.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
-                        output.accept(EXAMPLE_ITEM.get());
                         output.accept(TUNGSTEN_APPLE.get());
                         output.accept(RAW_BASTNASITE.get());
                         output.accept(BASTNASITE_ORE_ITEM.get());
                         output.accept(RAW_BAUXITE.get());
                         output.accept(BAUXITE_ORE_ITEM);
+                        output.accept(ALUMINUM_INGOT.get());
+                        output.accept(ALUMINUM_INGOT_ITEM.get());
                     }).build());
 
 
