@@ -5,12 +5,15 @@
     "item.mod01.pudame": "Pudame",
     "item.mod01.pudame_block": "Pudame block",
     "item.mod01.tungsten_apple": "Tungsten apple",
-    "item.mod01.raw_bastnasite": "Raw Bastnasite",
+    "item.mod01.raw_bastnasite": "Raw Bastnaesite",
+    "item.mod01.bastnasite_dust": "Rare Earth Dust",
     "item.mod01.raw_bauxite": "Raw Bauxite",
     "item.mod01.aluminum_ingot": "Aluminum Ingot",
-    "block.mod01.bastnasite_ore": "Bastnasite Ore",
+    "block.mod01.bastnasite_ore": "Bastnaesite Ore",
     "block.mod01.bauxite_ore": "Bauxite Ore",
     "block.mod01.aluminum_block": "Aluminum Block",
+    "item.mod01.aluminum_sword": "Aluminum Sword",
+    "item.mod01.aluminum_hammer": "Aluminum Hammer",
 
 
     "mod01.configuration.title": "mod-01 Configs",
