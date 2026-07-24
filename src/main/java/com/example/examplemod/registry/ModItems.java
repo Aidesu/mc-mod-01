@@ -32,6 +32,8 @@ public class ModItems {
             )
     );
 
+    public static final DeferredItem<BlockItem> REFLOW_OVEN_ITEM = ITEMS.registerSimpleBlockItem("reflow_oven", ModBlocks.REFLOW_OVEN);
+
     public static final DeferredItem<Item> TUNGSTEN_APPLE = ITEMS.registerSimpleItem("tungsten_apple",
             new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(1.2f).build()));
 

@@ -28,6 +28,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.ALUMINUM_INGOT_ITEM.get());
                         output.accept(ModItems.ALUMINUM_SWORD.get());
                         output.accept(ModItems.ALUMINUM_HAMMER.get());
+                        output.accept(ModItems.REFLOW_OVEN_ITEM.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

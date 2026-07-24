@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "mod01:block/reflow_oven", "y": 0 },
+    "facing=east": { "model": "mod01:block/reflow_oven", "y": 90 },
+    "facing=south": { "model": "mod01:block/reflow_oven", "y": 180 },
+    "facing=west": { "model": "mod01:block/reflow_oven", "y": 270 }
+  }
+}
