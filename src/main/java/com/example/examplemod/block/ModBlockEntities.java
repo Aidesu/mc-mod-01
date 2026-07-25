@@ -1,5 +1,6 @@
 package com.example.examplemod.block;
 
+import com.example.examplemod.block.entity.SolarPanelBlockEntity;
 import com.example.examplemod.mod01;
 import com.example.examplemod.registry.ModBlocks;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -15,6 +16,14 @@ public class ModBlockEntities {
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ReflowOvenBlockEntity>> REFLOW_OVEN_BE =
             BLOCK_ENTITIES.register("reflow_oven_be", () ->
                     BlockEntityType.Builder.of(ReflowOvenBlockEntity::new, ModBlocks.REFLOW_OVEN.get()).build(null));
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SolarPanelBlockEntity>> SOLAR_PANEL =
+            BLOCK_ENTITIES.register("solar_panel", () ->
+                    BlockEntityType.Builder.of(
+                            (pos, state) -> new SolarPanelBlockEntity(ModBlockEntities.SOLAR_PANEL.get(), pos, state),
+                            ModBlocks.SOLAR_PANEL.get()
+                    ).build(null)
+            );
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

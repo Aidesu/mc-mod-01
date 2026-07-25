@@ -1,6 +1,7 @@
 package com.example.examplemod.registry;
 
 import com.example.examplemod.item.HammerItem;
+import com.example.examplemod.item.WireCutterItem;
 import com.example.examplemod.mod01;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -54,13 +55,13 @@ public class ModItems {
     public static final DeferredItem<BlockItem> ALUMINUM_INGOT_ITEM = ITEMS.registerSimpleBlockItem("aluminum_block", ModBlocks.ALUMINUM_BLOCK);
 
     public static final DeferredItem<Item> WIRE_CUTTER = ITEMS.register("wire_cutter",
-            () -> new HammerItem(new Item.Properties()
-                    .durability(250)
+            () -> new WireCutterItem(new Item.Properties()
+                    .durability(25)
                     .stacksTo(1)));
 
     public static final DeferredItem<Item> ALUMINUM_HAMMER = ITEMS.register("aluminum_hammer",
             () -> new HammerItem(new Item.Properties()
-                    .durability(250)
+                    .durability(100)
                     .stacksTo(1)));
 
     public static final DeferredItem<Item> ALUMINUM_SWORD = ITEMS.register("aluminum_sword",
@@ -85,6 +86,8 @@ public class ModItems {
     );
 
     public static final DeferredItem<BlockItem> REFLOW_OVEN_ITEM = ITEMS.registerSimpleBlockItem("reflow_oven", ModBlocks.REFLOW_OVEN);
+    public static final DeferredItem<BlockItem> SOLAR_PANEL = ITEMS.registerSimpleBlockItem("solar_panel", ModBlocks.SOLAR_PANEL);
+
 
     public static final DeferredItem<Item> TUNGSTEN_APPLE = ITEMS.registerSimpleItem("tungsten_apple",
             new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(1.2f).build()));

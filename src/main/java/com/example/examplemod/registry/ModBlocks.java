@@ -1,7 +1,10 @@
 package com.example.examplemod.registry;
 
 import com.example.examplemod.block.ReflowOvenBlock;
+import com.example.examplemod.block.SolarPanelBlock;
 import com.example.examplemod.mod01;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -33,6 +36,13 @@ public class ModBlocks {
                     .strength(3.5f)
                     .sound(SoundType.METAL)
                     .noOcclusion()));
+
+    public static final DeferredBlock<Block> SOLAR_PANEL = BLOCKS.register("solar_panel",
+            () -> new SolarPanelBlock(
+                    BlockBehaviour.Properties.of()
+                            .noOcclusion()
+                            .requiresCorrectToolForDrops()
+            ));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

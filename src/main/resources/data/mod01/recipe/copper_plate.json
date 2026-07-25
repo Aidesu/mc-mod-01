@@ -6,11 +6,11 @@
       "item": "mod01:aluminum_hammer"
     },
     {
-      "item": "mod01:aluminum_ingot"
+      "item": "minecraft:copper_ingot"
     }
   ],
   "result": {
     "count": 1,
-    "id": "mod01:aluminum_plate"
+    "id": "mod01:copper_plate"
   }
 }
