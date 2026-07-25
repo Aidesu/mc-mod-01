@@ -8,13 +8,26 @@
     "item.mod01.raw_bastnasite": "Raw Bastnaesite",
     "item.mod01.bastnasite_dust": "Rare Earth Dust",
     "item.mod01.raw_bauxite": "Raw Bauxite",
+    "item.mod01.raw_quartzite": "Raw Quartzite",
     "item.mod01.aluminum_ingot": "Aluminum Ingot",
     "block.mod01.bastnasite_ore": "Bastnaesite Ore",
     "block.mod01.bauxite_ore": "Bauxite Ore",
     "block.mod01.aluminum_block": "Aluminum Block",
     "item.mod01.aluminum_sword": "Aluminum Sword",
     "item.mod01.aluminum_hammer": "Aluminum Hammer",
-    "item.mod01.reflow_oven": "Reflow Oven",
+    "block.mod01.reflow_oven": "Reflow Oven",
+    "item.mod01.reflow_oven_item": "Reflow Oven",
+    "block.mod01.quartzite_ore": "Quartzite Ore",
+    "item.mod01.quartzite_ore_item": "Quartzite Ore",
+    "item.mod01.mg_si": "Metallurgical-Grade Silicon (MG-SI)",
+    "item.mod01.eg_si": "Electronic-Grade Silicon (EG-SI)",
+    "item.mod01.crude_silica": "Crude Silica",
+    "item.mod01.purified_silica": "Purified Silica",
+    "item.mod01.enriched_quartzite": "Enriched Quartzite",
+
+
+
+
 
 
     "mod01.configuration.title": "mod-01 Configs",

@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "mod01:bauxite_ore",
-    "mod01:bastnasite_ore"
+    "mod01:bastnasite_ore",
+    "mod01:quartzite_ore",
+    "mod01:reflow_oven"
   ]
 }

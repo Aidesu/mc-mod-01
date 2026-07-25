@@ -23,6 +23,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BASTNASITE_ORE = BLOCKS.registerSimpleBlock("bastnasite_ore", BlockBehaviour.Properties.of()
             .strength(3.0f, 3.0f).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_ORANGE));
 
+    public static final DeferredBlock<Block> QUARTZITE_ORE = BLOCKS.registerSimpleBlock("quartzite_ore", BlockBehaviour.Properties.of()
+            .strength(3.0f, 3.0f).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_LIGHT_GRAY));
+
     public static final DeferredBlock<Block> BAUXITE_ORE = BLOCKS.registerSimpleBlock("bauxite_ore", BlockBehaviour.Properties.of()
             .strength(3.0f, 3.0f).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_YELLOW));
 

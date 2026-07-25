@@ -1,5 +1,6 @@
 package com.example.examplemod.registry;
 
+import com.example.examplemod.item.HammerItem;
 import com.example.examplemod.mod01;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -18,12 +19,25 @@ public class ModItems {
     public static final DeferredItem<BlockItem> BASTNASITE_ORE_ITEM = ITEMS.registerSimpleBlockItem("bastnasite_ore", ModBlocks.BASTNASITE_ORE);
     public static final DeferredItem<Item> BASTNASITE_DUST = ITEMS.registerSimpleItem("bastnasite_dust", new Item.Properties());
 
+    public static final DeferredItem<Item> RAW_QUARTZITE = ITEMS.registerSimpleItem("raw_quartzite", new Item.Properties());
+    public static final DeferredItem<Item> ENRICHED_QUARTZITE = ITEMS.registerSimpleItem("enriched_quartzite", new Item.Properties());
+    public static final DeferredItem<BlockItem> QUARTZITE_ORE_ITEM = ITEMS.registerSimpleBlockItem("quartzite_ore", ModBlocks.QUARTZITE_ORE);
+
     public static final DeferredItem<Item> RAW_BAUXITE = ITEMS.registerSimpleItem("raw_bauxite", new Item.Properties());
     public static final DeferredItem<BlockItem> BAUXITE_ORE_ITEM = ITEMS.registerSimpleBlockItem("bauxite_ore", ModBlocks.BAUXITE_ORE);
 
+    public static final DeferredItem<Item> MG_SI = ITEMS.registerSimpleItem("mg_si", new Item.Properties());
+    public static final DeferredItem<Item> EG_SI = ITEMS.registerSimpleItem("eg_si", new Item.Properties());
+    public static final DeferredItem<Item> CRUDE_SILICA = ITEMS.registerSimpleItem("crude_silica", new Item.Properties());
+    public static final DeferredItem<Item> PURIFIED_SILICA = ITEMS.registerSimpleItem("purified_silica", new Item.Properties());
+
     public static final DeferredItem<Item> ALUMINUM_INGOT = ITEMS.registerSimpleItem("aluminum_ingot", new Item.Properties());
+
     public static final DeferredItem<BlockItem> ALUMINUM_INGOT_ITEM = ITEMS.registerSimpleBlockItem("aluminum_block", ModBlocks.ALUMINUM_BLOCK);
-    public static final DeferredItem<Item> ALUMINUM_HAMMER = ITEMS.registerSimpleItem("aluminum_hammer", new Item.Properties());
+    public static final DeferredItem<Item> ALUMINUM_HAMMER = ITEMS.register("aluminum_hammer",
+            () -> new HammerItem(new Item.Properties()
+                    .durability(250)
+                    .stacksTo(1)));
 
     public static final DeferredItem<Item> ALUMINUM_SWORD = ITEMS.register("aluminum_sword",
             () -> new SwordItem(
