@@ -14,4 +14,20 @@ public class ModTiers {
             14,                                // Enchantabilité
             () -> Ingredient.of(ModItems.ALUMINUM_INGOT.get()) // Élément de réparation
     );
+    public static final Tier MG_SI = new SimpleTier(
+            BlockTags.INCORRECT_FOR_IRON_TOOL,
+            3000,
+            8.0f,
+            3.0f,
+            14,
+            () -> Ingredient.of(ModItems.MG_SI.get())
+    );
+    public static final Tier EG_SI = new SimpleTier(
+            BlockTags.INCORRECT_FOR_IRON_TOOL,
+            9000,
+            14.0f,
+            4.5f,
+            14,
+            () -> Ingredient.of(ModItems.EG_SI.get())
+    );
 }

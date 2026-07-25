@@ -2,8 +2,8 @@
 	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "blocks/voxel_palette",
-		"particle": "blocks/voxel_palette"
+		"0": "mod01:block/reflow_oven",
+		"particle": "mod01:block/reflow_oven"
 	},
 	"elements": [
 		{

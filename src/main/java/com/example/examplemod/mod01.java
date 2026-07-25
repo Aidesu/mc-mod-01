@@ -1,8 +1,10 @@
 package com.example.examplemod;
 
+import com.example.examplemod.block.ModBlockEntities;
 import com.example.examplemod.registry.ModBlocks;
 import com.example.examplemod.registry.ModCreativeTabs;
 import com.example.examplemod.registry.ModItems;
+import com.example.examplemod.registry.ModMenuTypes;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -29,6 +31,8 @@ public class mod01 {
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 

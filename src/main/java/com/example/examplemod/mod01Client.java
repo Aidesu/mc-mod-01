@@ -1,5 +1,7 @@
 package com.example.examplemod;
 
+import com.example.examplemod.registry.ModMenuTypes;
+import com.example.examplemod.screen.ReflowOvenScreen;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -7,6 +9,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
@@ -27,5 +30,10 @@ public class mod01Client {
         // Some client setup code
         mod01.LOGGER.info("HELLO FROM CLIENT SETUP");
         mod01.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+    }
+
+    @SubscribeEvent
+    public static void registerScreens(RegisterMenuScreensEvent event) {
+        event.register(ModMenuTypes.REFLOW_OVEN_MENU.get(), ReflowOvenScreen::new);
     }
 }

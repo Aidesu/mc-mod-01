@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mod01:aluminum_hammer"
+    },
+    {
+      "item": "mod01:raw_bastnasite"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "mod01:aluminum_plate"
+  }
+}
